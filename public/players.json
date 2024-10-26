@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "player_name": "Virat Kohli",
+        "player_img": "https://i.ibb.co.com/y6f9Syw/Virat-Kohli.webp",
+        "role": "batter",
+        "handedness": "right handed",
+        "price": 120000,
+        "country": "India"
+    },
+    {
+        "id": 2,
+        "player_name": "Ben Stokes",
+        "player_img": "https://i.ibb.co.com/SXhjTwJ/Ben-Stokes.jpg",
+        "role": "all-rounder",
+        "handedness": "left handed",
+        "price": 150000,
+        "country": "England"
+    },
+    {
+        "id": 3,
+        "player_name": "Trent Boult",
+        "player_img": "https://i.ibb.co.com/bzcv3Fh/Trent-Boult.webp",
+        "role": "bowler",
+        "handedness": "left handed",
+        "price": 700000,
+        "country": "New Zealand"
+    },
+    {
+        "id": 4,
+        "player_name": "AB de Villiers",
+        "player_img": "https://i.ibb.co.com/0tb4h0H/AB-de-Villiers.webp",
+        "role": "batter",
+        "handedness": "right handed",
+        "price": 110000,
+        "country": "South Africa"
+    },
+    {
+        "id": 5,
+        "player_name": "Mahmudullah",
+        "player_img": "https://i.ibb.co.com/KhpgnMJ/Mahmudullah.jpg",
+        "role": "all-rounder",
+        "handedness": "left handed",
+        "price": 85000,
+        "country": "Bangladesh"
+    },
+    {
+        "id": 6,
+        "player_name": "Mushfiqur Rahim",
+        "player_img": "https://i.ibb.co.com/FXNyJ6W/Mushfiqur-Rahim.webp",
+        "role": "batter",
+        "handedness": "right handed",
+        "price": 75000,
+        "country": "Bangladesh"
+    }
+]
