@@ -6,8 +6,16 @@ import Players from './components/Players/Players'
 import Selected from './components/Selected/Selected'
 import News from './components/News/News'
 import Footer from './components/Footer/Footer'
+import { useState } from 'react'
 
 function App() {
+
+    const [selected, setSelected] = useState([]);
+
+    const handleAddToSelected = player => {
+      const newSelected = [...selected, player]
+      setSelected(newSelected)
+    }
 
   return (
     <>
@@ -20,10 +28,10 @@ function App() {
         <Switch></Switch>
       </section>
       <section>
-        <Players></Players>
+        <Players handleAddToSelected={handleAddToSelected}></Players>
       </section>
-      <section className='hidden'>
-        <Selected></Selected>
+      <section>
+        <Selected selected={selected}></Selected>
       </section>
       <section className='absolute -bottom-40 w-full mx-auto'>
         <News></News>

@@ -1,4 +1,4 @@
-const Player = ({player}) => {
+const Player = ({player, handleAddToSelected}) => {
     
     const {player_name, player_img, country, role, price, handedness} = player;
 
@@ -21,7 +21,7 @@ const Player = ({player}) => {
                 </div>
                 <div className="flex justify-between">
                     <p>price: {price}</p>
-                    <button className="border p-2 rounded-md">Choose Player</button>
+                    <button onClick={() => handleAddToSelected(player)} className="border p-2 rounded-md">Choose Player</button>
                 </div>
             </div>
         </div>
