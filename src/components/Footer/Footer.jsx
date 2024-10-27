@@ -27,13 +27,13 @@ const Footer = () => {
                     <h3 className='text-white'>Subscribe</h3>
                     <p className='text-neutral-600 my-2'>Subscribe to our newsletter for the latest updates.</p>
                     <form action="#">
-                    <input className='px-6 py-2 rounded-l-lg' type="text" placeholder='Enter your email'/>
-                    <button className='bg-yellow-200 px-4 py-2 rounded-r-lg'>Subscribe</button>
+                    <input className='px-5 py-2 rounded-l-lg' type="text" placeholder='Enter your email'/>
+                    <button className='bg-yellow-200 px-3 py-2 rounded-r-lg'>Subscribe</button>
                 </form>
                 </div>
             </div>
-            <div className="copyright border-t-2">
-                <p className='text-neutral-600 text-center py-5'>@2024 Your Company All Rights Reserved.</p>
+            <div className="copyright border-t-2 py-5">
+                <p className='text-neutral-600 text-center'>@2024 Your Company All Rights Reserved.</p>
             </div>
            </div>
         </div>

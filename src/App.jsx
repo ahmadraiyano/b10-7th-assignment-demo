@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './components/Header/Header'
-import Hero from './components/Header/Hero'
+import Hero from './components/Header/Hero/Hero'
 import Switch from './components/Switch/Switch'
 import Players from './components/Players/Players'
 import Selected from './components/Selected/Selected'
@@ -11,11 +11,16 @@ import { useState } from 'react'
 function App() {
 
     const [selected, setSelected] = useState([]);
+    
 
     const handleAddToSelected = player => {
       const newSelected = [...selected, player]
       setSelected(newSelected)
     }
+
+  
+
+    
 
   return (
     <>

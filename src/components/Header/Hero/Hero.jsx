@@ -1,10 +1,12 @@
-import banner from '../../assets/images/banner-main.png'
+import banner from '../../../assets/images/banner-main.png'
 
 import './hero.css'
 const Hero = () => {
     
     return (
         <div className="hero h-[480px] bg-black flex flex-col justify-around items-center">
+           
+
             <div className="hero-img w-60">
                 <img className='w-full' src={banner} alt="" />
             </div>

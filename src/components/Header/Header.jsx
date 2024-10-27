@@ -1,7 +1,9 @@
 import logo from '../../assets/images/logo.png'
 const Header = () => {
+
     return (
         <div class="flex justify-between items-center p-4">
+           
             <img src={logo} alt="logo" />
             <div className="flex gap-2 items-center">
                 <ul className="flex gap-2">
