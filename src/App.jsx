@@ -1,7 +1,5 @@
 import './App.css'
-import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
-import Switch from './components/Switch/Switch'
 import Players from './components/Players/Players'
 import Selected from './components/Selected/Selected'
 import News from './components/News/News'
@@ -18,7 +16,23 @@ function App() {
       setSelected(newSelected)
     }
 
-  
+    const playerWindow = () => {
+      document.getElementById("selectedBtn").classList.remove("bg-yellow-200");
+      document.getElementById("playerBtn").classList.add("bg-yellow-200");
+      document.getElementById("playerTitle").classList.remove("hidden");
+      document.getElementById("selectedTitle").classList.add("hidden");
+      document.getElementById("playerSection").classList.remove("hidden");
+      document.getElementById("selectedSection").classList.add("hidden");
+  }
+
+  const selectedWindow = () => {
+    document.getElementById("selectedBtn").classList.add("bg-yellow-200");
+    document.getElementById("playerBtn").classList.remove("bg-yellow-200");
+    document.getElementById("playerTitle").classList.add("hidden");
+    document.getElementById("selectedTitle").classList.remove("hidden");
+    document.getElementById("playerSection").classList.add("hidden");
+    document.getElementById("selectedSection").classList.remove("hidden");
+}
 
     
 
@@ -28,15 +42,28 @@ function App() {
         <Hero></Hero>
       </header>
       <main className='w-10/12 mx-auto mt-14 relative'>
-      <section>
-        <Switch></Switch>
+      
+        <div>
+        <section>
+        <div className="flex justify-between items-center">
+           <div>
+            <div id="playerTitle"><h2>Available Players</h2></div>
+            <div id="selectedTitle" className="hidden"><h2>Selected Player</h2></div>
+           </div>
+           <div>
+            <button id="playerBtn" onClick={playerWindow} className="p-2 bg-yellow-200 rounded-md">Available</button>
+            <button id="selectedBtn" onClick={selectedWindow} className="p-4 rounded-md">Selected</button>
+           </div>
+        </div>
       </section>
-      <section>
+      <section id="playerSection">
         <Players handleAddToSelected={handleAddToSelected}></Players>
       </section>
-      <section>
+      <section id="selectedSection" className='hidden'>
         <Selected selected={selected}></Selected>
       </section>
+        </div>
+
       <section className='absolute -bottom-40 w-full mx-auto'>
         <News></News>
       </section>
