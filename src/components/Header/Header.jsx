@@ -12,7 +12,7 @@ const Header = () => {
                     <li><a href="#">Teams</a></li>
                     <li><a href="#">Schedules</a></li>
                 </ul>
-                <div class="flex border p-2"><p><span>0</span><span class="mx-2">Coin</span></p>
+                <div class="flex border p-2"><p><span id="balance">0</span><span class="mx-2">Coin</span></p>
                     <img src="" alt="" />
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './components/Header/Header'
-import Hero from './components/Header/Hero/Hero'
+import Hero from './components/Hero/Hero'
 import Switch from './components/Switch/Switch'
 import Players from './components/Players/Players'
 import Selected from './components/Selected/Selected'
@@ -25,7 +25,6 @@ function App() {
   return (
     <>
       <header className='w-10/12 mx-auto'>
-        <Header></Header>
         <Hero></Hero>
       </header>
       <main className='w-10/12 mx-auto mt-14 relative'>
